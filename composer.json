@@ -1,0 +1,28 @@
+{
+    "name": "indesh/icalco",
+    "description": "Calculator",
+    "authors": [
+        {
+            "name": "Indesh Prinja",
+            "email": "indeshprinja@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Indesh\\Icalco\\": "packages/indesh/icalco/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Indesh\\Icalco\\CalculatorServiceProvider"
+            ]
+        }
+    }
+}
